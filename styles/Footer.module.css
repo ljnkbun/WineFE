@@ -1,0 +1,12 @@
+.footer {
+  padding: 1rem 0;
+  color: black;
+  text-align: center;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff8f8;
+}
+
+.brand {
+  color: #f9826c;
+}

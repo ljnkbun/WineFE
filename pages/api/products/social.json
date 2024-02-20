@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Zalo",
+    "image": "https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/2500/zalo-seeklogo.com-512.png",
+    "link": "https://chat.zalo.me/"
+  },
+  {
+    "id": 2,
+    "title": "Facebook",
+    "image": "https://cdn4.iconfinder.com/data/icons/various-icons-2/476/Facebook.png",
+    "link": "https://www.facebook.com/hqt994"
+  },
+  {
+    "id": 1,
+    "title": "Phone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png",
+    "link": "0000000000"
+  }
+]
