@@ -7,7 +7,7 @@ const SocialLink = ({ social }) => {
   return (
     <div className={styles.card}>
       <Link href={social.Linkink}>
-        <Image src={social.image} height={50} width={50} alt={social.title} />
+        <Image src={social.image} fill />
       </Link>
 
     </div>
