@@ -1,4 +1,5 @@
 import CategoryCard from '../components/CategoryCard';
+import SocialLink from '../components/SocialLink';
 import styles from '../styles/Home.module.css';
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
           name="Accessories"
         />
       </div>
+      <SocialLink />
     </main>
   );
 };

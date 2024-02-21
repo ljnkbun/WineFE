@@ -18,3 +18,87 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+/* menu on desktop */
+.navbar .menus {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navbar .menu-items {
+  position: relative;
+  font-size: 14px;
+}
+
+.navbar .menu-items a {
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar .menu-items button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+.navbar button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  /*input has OS specific font-family*/
+  cursor: pointer;
+}
+
+.navbar button span {
+  margin-left: 3px;
+}
+
+.navbar .menu-items>a,
+.navbar .menu-items button {
+  text-align: left;
+  padding: 0.7rem 1rem;
+}
+
+.navbar .menu-items a:hover,
+.navbar .menu-items button:hover {
+  background-color: #f2f2f2;
+}
+
+.navbar .arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.dropdown {
+  display: none;
+}
+
+.show {
+  display: block;
+  position: absolute;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}

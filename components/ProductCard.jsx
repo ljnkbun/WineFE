@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className={styles.card}>
-      <Image src={product.image} height={300} width={220} />
+      <Image src={product.image} height={300} width={220} alt={product.product}/>
       <h4 className={styles.title}>{product.product}</h4>
       <h5 className={styles.category}>{product.category}</h5>
       <p>$ {product.price}</p>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Zalo",
+    "image": "/Facebook.png",
+    "link": "https://www.facebook.com/hqt994"
+  },
+  {
+    "id": 2,
+    "title": "Facebook",
+    "image": "/zalo-seeklogo.png",
+    "link": "https://chat.zalo.me/"
+  },
+  {
+    "id": 3,
+    "title": "Phone",
+    "image": "/Phone_icon.png",
+    "link": "0000000000"
+  }
+]

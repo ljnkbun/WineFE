@@ -1,15 +1,26 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/SocialLink.module.css';
+import { getSocials } from '../pages/api/others/social';
 
-const SocialLink = ({ social }) => {
-  const dispatch = useDispatch();
-
+const SocialLink = () => {
+  const socials = getSocials();
   return (
-    <div className={styles.card}>
-      <Link href={social.Linkink}>
-        <Image src={social.image} fill />
-      </Link>
-
+    <div className={styles.social}>
+      {Object.entries(socials).map((social, index) => {
+        return (
+          <div className={styles.card} key={social[1].id}>
+            <Link href={social[1].link} target="_blank" >
+              <Image className={styles.shake} src={social[1].image} width={50} height={50} alt={social[1].title} />
+            </Link>
+          </div>
+        );
+      })}
+      <div key="top-page">
+        <Link href="#!" onClick={e => {e.preventDefault();window.scrollTo({top: 0, behavior: "smooth"});}}  >
+          <Image src="/arrow-top.png" width={50} height={50} alt="top-page" />
+        </Link>
+      </div>
     </div>
   );
 };

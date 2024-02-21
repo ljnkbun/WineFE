@@ -1,17 +1,38 @@
 [
   {
+    "id": 1,
     "name": "Home",
     "path": "/"
   },
   {
+    "id": 2,
     "name": "Shop",
     "path": "/shop"
   },
   {
+    "id": 3,
     "name": "Category",
-    "path": "/category"
+    "path": "#",
+    "submenu": [
+      {
+        "id": 5,
+        "name": "Wine",
+        "path": "/wine"
+      },
+      {
+        "id": 6,
+        "name": "Champagne",
+        "path": "/champagne"
+      },
+      {
+        "id": 7,
+        "name": "Tequila",
+        "path": "/tequila"
+      }
+    ]
   },
   {
+    "id": 4,
     "name": "Product",
     "path": "/product"
   }
