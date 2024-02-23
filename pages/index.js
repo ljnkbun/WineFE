@@ -1,10 +1,12 @@
 import CategoryCard from '../components/CategoryCard';
 import SocialLink from '../components/SocialLink';
+import Slides from '../components/slides/Slides';
 import styles from '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
     <main className={styles.container}>
+      <Slides />
       <div className={styles.small}>
         <CategoryCard image="https://imgur.com/uKQqsuA.png" name="Xbox" />
         <CategoryCard image="https://imgur.com/3Y1DLYC.png" name="PS5" />
