@@ -42,7 +42,9 @@ export default function Slides() {
             className="slide"
             key={slider.id}
           >
-            <Image key={slider.id} className="slide" src={slider.imageUrl} alt={slider.title} width={500} height={400}/>
+            <Image key={slider.id} className="slide w-full h-auto" priority  src={slider.imageUrl} alt={slider.title} width="0"
+              height="0"
+              sizes="100vw" />
           </div>
         ))}
       </div>

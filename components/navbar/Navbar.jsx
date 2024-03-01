@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import ImageLink from 'next/link';
+import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import styles from '../../styles/Navbar.module.css';
 import { getCategories } from '../../pages/api/products/categories';
@@ -13,11 +15,16 @@ const Navbar = () => {
   };
   return (
     <nav className={styles.navbar}>
-      <a className={styles.logo} href="/">Rượu Tuấn Khỉ</a>
+
+      <a href="/" className={styles.logo}>
+        <Image
+          key="home" src="https://imgur.com/3CF1UhY.png" alt="Home" width={60}
+          height={60}
+        />
+        Rượu Tuấn Khỉ
+      </a>
       <ul className={styles.links}>
-       
         {Object.entries(categories).map((category, index) => {
-          
           return <MenuItems items={category[1]} key={index} />;
         })}
 

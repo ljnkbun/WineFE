@@ -1,5 +1,4 @@
 import Dropdown from "./Dropdown";
-import { useRouter } from 'next/router'
 import Link from 'next/link';
 import { useState, useEffect, useRef } from "react";
 import styles from '../../styles/Navbar.module.css';
