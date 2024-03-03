@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import ImageLink from 'next/link';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import styles from '../../styles/Navbar.module.css';

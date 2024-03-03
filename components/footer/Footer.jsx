@@ -1,25 +1,37 @@
 import styles from '../../styles/Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faPinterestP } from '@fortawesome/free-brands-svg-icons'
+
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Copyright <span className={styles.brand}>GamesKart</span> &copy;{' '}
-      {new Date().getFullYear()}
+      <div className={styles.footerSocialWrapper}>
+        <div className={styles.footerSocial}>
+          <div className={styles.btnSocial}>
+            <a href="https://www.facebook.com/hqt994" target="_blank">
+              <FontAwesomeIcon icon={faFacebookF} beatFade />
+            </a>
+          </div>
+          <div className={styles.btnSocial}>
+            <a href="https://www.facebook.com/hqt994" target="_blank">
+              <FontAwesomeIcon icon={faTwitter} shake />
+            </a>
+          </div>
+          <div className={styles.btnSocial}>
+            <a href="https://www.facebook.com/hqt994" target="_blank">
+              <FontAwesomeIcon icon={faPinterestP} spin />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.footerBottomWrapper}>
+        <div className={styles.footerBottom}>
+            <strong>Thưởng thức có trách nhiệm</strong><br />Các sản phẩm rượu không dành cho người dưới 18 tuổi và phụ nữ đang mang thai.<br />Bản quyền © 2024 <a href="/">Rượu Tuấn Khỉ</a> Hiện thân của sự cống hiến không ngừng để đạt tới sự hoàn hảo
+        </div>
+      </div>
+    </footer >
 
-      <FontAwesomeIcon icon="fa-solid fa-circle-info" beatFade />
-      {/* <div className="container footer-social text-center">
-        <a href="#" target="_blank" className="btn x-btn-secondary btn-circle btn-social btn-brand" title="facebook-f">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" target="_blank" className="btn x-btn-secondary btn-circle btn-social btn-brand" title="twitter">
-          <i className="fab fa-twitter"></i>
-        </a>
-        <a href="#" target="_blank" className="btn x-btn-secondary btn-circle btn-social btn-brand" title="pinterest-p">
-          <i className="fab fa-pinterest-p"></i>
-        </a>
-      </div> */}
-    </footer>
   );
 };
 

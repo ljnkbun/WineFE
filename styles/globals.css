@@ -13,6 +13,11 @@ body {
   background-color: beige;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .cus-body {
   margin-left: 15%;
   margin-right: 15%
@@ -47,7 +52,7 @@ body {
 }
 
 .dot {
-  background: #ffffff;
+  background: beige;
   margin: 0;
 }
 
@@ -118,6 +123,7 @@ body {
   text-align: left;
   padding: 0.7rem 1rem;
 }
+
 
 .navbar .menu-items a:hover,
 .navbar .menu-items button:hover {
@@ -190,3 +196,111 @@ body {
   background-color: #6a0dad;
 }
 
+/* Phone ring */
+.alo-phone {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.alo-ph-circle {
+  width: 90px;
+  height: 90px;
+  right: 1rem;
+  position: relative;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #b39851;
+  opacity: .5;
+  animation: zoomIn 0.5s infinite;
+}
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3)
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+
+.alo-ph-circle-fill {
+  width: 60px;
+  height: 60px;
+  top: calc(calc(310px - 60px) / 2);
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #b39851;
+  opacity: .75 !important;
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1)
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05)
+  }
+
+  to {
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+.alo-ph-img-circle {
+  width: 30px;
+  height: 30px;
+  top: calc(calc(310px - 30px) / 2);
+  left: calc(calc(60px  - 30px) / 2);
+  position: absolute;
+  background: #bba363 url(/Phone_icon.png) no-repeat center center;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  opacity: .7;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background-color: #b39851;
+  background-size: 70%;
+  animation: tada 0.5s infinite;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1)
+  }
+
+  10%,
+  20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  }
+
+  to {
+    transform: scale3d(1, 1, 1)
+  }
+}

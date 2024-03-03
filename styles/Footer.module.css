@@ -1,13 +1,18 @@
 .footer {
-  padding: 1rem 0;
+  padding-top: 1rem 0;
   color: rgb(255, 255, 255);
   text-align: center;
   bottom: 0;
   z-index: 1;
-  background-color: #b3985180;
+  background-color: #530033;
 }
 
-.icons{
+.footerSocialWrapper {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.icons {
   width: 100%;
   margin: 0 0 0 0;
   align-items: center;
@@ -17,14 +22,48 @@
   color: #f9826c;
 }
 
-.btn.btn-circle {
-  border-radius: 50%;
+.footerSocial {
+  border-color: transparent !important;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-social .btn-social {
+.btnSocial {
+  border-radius: 50%;
+  background-color: #aaa;
+  color: #fff;
   display: inline-block;
-  border-color: transparent !important;
-  -webkit-box-shadow: none;
+  border-color: #c58383 !important;
   box-shadow: none;
   margin: 0 0.4em;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  width: calc(2.75rem + 2px);
+  height: calc(2.75rem + 2px);
+  line-height: calc(2.75rem + 2px);
+  cursor: pointer;
+}
+
+.btnSocial:hover {
+  background-color: #c58383;
+  scale: 1.1;
+}
+
+
+.footerBottomWrapper {
+  background: #250016;
+  color: #b39851;
+}
+
+.footerBottom {
+  margin: 1rem 0 0;
+  padding: 1rem 0 1rem;
 }

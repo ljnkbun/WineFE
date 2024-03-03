@@ -16,8 +16,15 @@ const SocialLink = () => {
           </div>
         );
       })}
-      <div key="top-page">
-        <Link href="#!" onClick={e => {e.preventDefault();window.scrollTo({top: 0, behavior: "smooth"});}}  >
+      <div key="phoneRing">
+        <div className="alo-phone">
+          <div className="alo-ph-circle"></div>
+          <div className="alo-ph-circle-fill"></div>
+          <div className="alo-ph-img-circle"></div>
+        </div>
+      </div>
+      <div  key="top-page">
+        <Link href="#!" onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}  >
           <Image src="/arrow-top.png" width={50} height={50} alt="top-page" />
         </Link>
       </div>
