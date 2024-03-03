@@ -1,5 +1,12 @@
 module.exports = {
   images: {
-    domains: ['imgur.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'imgur.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
